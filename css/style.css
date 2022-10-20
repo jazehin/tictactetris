@@ -1,0 +1,67 @@
+:root {
+    --dark-mode-1: rgb(50, 50, 50);
+    --dark-mode-2: rgb(70, 70, 70);
+    --dark-mode-3: rgb(90, 90, 90);
+    --dark-mode-txt: rgb(250, 250, 250);
+
+    --light-mode-1: rgb(250, 250, 250);
+    --light-mode-2: rgb(230, 230, 230);
+    --light-mode-3: rgb(210, 210, 210);
+    --light-mode-txt: rgb(50, 50, 50);
+}
+/*
+.dark-1 {
+    background-color: var(--dark-mode-1);
+    color: var(--dark-mode-txt);
+}
+
+.dark-2 {
+    background-color: var(--dark-mode-2);
+    color: var(--dark-mode-txt);
+}
+
+.dark-3 {
+    background-color: var(--dark-mode-3);
+    color: var(--dark-mode-txt);
+}
+
+.light-1 {
+    background-color: var(--light-mode-1);
+    color: var(--light-mode-txt);
+}
+
+.light-2 {
+    background-color: var(--light-mode-2);
+    color: var(--light-mode-txt);
+}
+
+.light-3 {
+    background-color: var(--light-mode-3);
+    color: var(--light-mode-txt);
+}
+*/
+
+body {
+    background-color: var(--dark-mode-1);
+    color: var(--dark-mode-txt);
+}
+
+
+button {
+    background-color: var(--light-mode-1);
+    border: 2px solid var(--light-mode-2);
+    color: var(--light-mode-txt);
+    transition-duration: 0.1s;
+}
+  
+button:hover {
+    background-color: var(--light-mode-2);
+    border: 2px solid var(--light-mode-3);
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--light-mode-1);
+        color: var(--light-mode-txt);
+    }
+}
