@@ -14,13 +14,13 @@
 </head>
 <body>
     <head>
-
+        
     </head>
     <nav>
 
     </nav>
     <main>
-        
+
     </main>
     <footer>
 
